@@ -27,21 +27,37 @@ public class UserServiceImpl implements UserService {
 
     @Override
     public UserDto findWithId(Long userId) {
-        return null;
+        User user = userRepository.findById(userId)
+                .orElseThrow(() -> new SourceNotFoundException("Aratılan id ile ilişkili bir kayıt bulunamamıştır. Id: " + userId));
+        return UserMapper.mapToUserDto(user);
     }
 
     @Override
     public List<UserDto> findAllUsers() {
-        return null;
+        List<User> users = userRepository.findAll();
+        return users.stream().map((user -> UserMapper.mapToUserDto(user))).collect(Collectors.toList());
     }
 
     @Override
     public UserDto updateUser(Long userId, UserDto updatedUsers) {
-        return null;
+        User user = userRepository.findById(userId)
+                .orElseThrow(() -> new SourceNotFoundException("Girilen id ile ilişkili bir kayıt bulunanmadı. Id: " + userId));
+
+        user.setFirstName(updatedUsers.getFirstName());
+        user.setLastName(updatedUsers.getLastName());
+        user.setEmail(updatedUsers.getEmail());
+        user.setPassword(updatedUsers.getPassword());
+
+        User updateUserInDatabase = userRepository.save(user);
+
+        return UserMapper.mapToUserDto(updateUserInDatabase);
     }
 
     @Override
     public void deleteUser(Long userId) {
+        User user = userRepository.findById(userId)
+                .orElseThrow(() -> new SourceNotFoundException("Girilen id ile ilişkili bir kayıt bulunanmadı. Id: " + userId));
 
+        userRepository.deleteById(userId);
     }
 }
