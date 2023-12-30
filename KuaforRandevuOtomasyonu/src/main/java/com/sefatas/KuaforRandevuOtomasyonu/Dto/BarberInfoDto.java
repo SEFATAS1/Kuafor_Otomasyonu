@@ -1,8 +1,13 @@
 package com.sefatas.KuaforRandevuOtomasyonu.Dto;
 
 import com.sefatas.KuaforRandevuOtomasyonu.Entity.BarberInfo;
-import lombok.Data;
+import lombok.*;
 
+@Getter
+@Setter
+@NoArgsConstructor
+@AllArgsConstructor
 public class BarberInfoDto extends BarberInfo {
-    private long Id;
+    private Long Id;
+    private String Note;
 }

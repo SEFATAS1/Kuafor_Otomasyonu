@@ -1,6 +1,5 @@
 package com.sefatas.KuaforRandevuOtomasyonu.Entity;
 
-import com.sefatas.KuaforRandevuOtomasyonu.Dto.UserDto;
 import jakarta.persistence.*;
 import lombok.*;
 

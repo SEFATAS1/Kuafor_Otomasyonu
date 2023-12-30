@@ -9,5 +9,4 @@ public class KuaforRandevuOtomasyonuApplication {
 	public static void main(String[] args) {
 		SpringApplication.run(KuaforRandevuOtomasyonuApplication.class, args);
 	}
-
 }
