@@ -8,14 +8,16 @@ public class BarberInfoMapper {
     public static BarberInfoDto mapToBarberInfoDto(BarberInfo barberInfo){
         return new BarberInfoDto(
                 barberInfo.getId(),
-                barberInfo.getNote()
+                barberInfo.getUserId(),
+                barberInfo.getDuration()
         );
     }
 
     public static BarberInfo mapToBarberInfo(BarberInfoDto barberInfoDto){
         return  new BarberInfo(
                 barberInfoDto.getId(),
-                barberInfoDto.getNote()
+                barberInfoDto.getUserId(),
+                barberInfoDto.getDuration()
         );
     }
 }

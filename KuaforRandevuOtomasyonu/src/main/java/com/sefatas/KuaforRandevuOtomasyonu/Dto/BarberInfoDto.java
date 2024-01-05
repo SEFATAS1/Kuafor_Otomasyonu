@@ -9,5 +9,6 @@ import lombok.*;
 @AllArgsConstructor
 public class BarberInfoDto extends BarberInfo {
     private Long Id;
-    private String Note;
+    private Long UserId;
+    private Integer Duration;
 }

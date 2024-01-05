@@ -11,8 +11,9 @@ import java.util.List;
 
 @AllArgsConstructor
 @RestController
-@RequestMapping("/api/barberinfos")
+@RequestMapping("/api/BarberInfos")
 public class BarberInfoController {
+
     private BarberInfoService barberInfoService;
 
     @PostMapping
