@@ -18,25 +18,25 @@ public class AppointmentController {
 
     @PostMapping
     public ResponseEntity<AppointmentDto> createAppointment(@RequestBody AppointmentDto appointmentDto){
-        AppointmentDto createdAppointment = appointmentService.CreateAppointment(appointmentDto);
+        AppointmentDto createdAppointment = appointmentService.createAppointment(appointmentDto);
         return new ResponseEntity<>(createdAppointment, HttpStatus.CREATED);
     }
 
     @GetMapping
     public ResponseEntity<List<AppointmentDto>> findAllAppointments(){
-        List<AppointmentDto> appointmentDtoList = appointmentService.findAllAppointment();
+        List<AppointmentDto> appointmentDtoList = appointmentService.findAllAppointments();
         return ResponseEntity.ok(appointmentDtoList);
     }
 
     @PutMapping("{Id}")
     public ResponseEntity<AppointmentDto> updateAppointment(@PathVariable("Id") Long appointmentId, @RequestBody AppointmentDto currentAppointmentDto){
-        AppointmentDto appointmentDto = appointmentService.UpdateAppointment(appointmentId, currentAppointmentDto);
+        AppointmentDto appointmentDto = appointmentService.updateAppointment(appointmentId, currentAppointmentDto);
         return ResponseEntity.ok(appointmentDto);
     }
 
     @PutMapping("{Id}")
     public ResponseEntity<AppointmentDto> updateAppointmentState(@PathVariable("Id") Long appointmentId, @RequestBody AppointmentDto currentAppointmentDto){
-        AppointmentDto appointmentDto = appointmentService.UpdateAppointmentState(appointmentId, currentAppointmentDto);
+        AppointmentDto appointmentDto = appointmentService.updateAppointmentState(appointmentId, currentAppointmentDto);
         return ResponseEntity.ok(appointmentDto);
     }
 }

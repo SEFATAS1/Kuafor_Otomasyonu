@@ -18,7 +18,7 @@ public class UserRoleController {
     private UserRoleService userRoleService;
 
     @GetMapping
-    public ResponseEntity<List<UserRoleDto>> findAllUsers(){
+    public ResponseEntity<List<UserRoleDto>> findAllUserRoles(){
         List<UserRoleDto> userRoleDtoList = userRoleService.findAllUserRoles();
         return ResponseEntity.ok(userRoleDtoList);
     }

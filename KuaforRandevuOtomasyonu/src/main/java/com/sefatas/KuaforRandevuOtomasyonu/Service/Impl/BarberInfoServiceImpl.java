@@ -31,7 +31,7 @@ public class BarberInfoServiceImpl implements BarberInfoService {
         BarberInfo barberInfo = barberInfoRepository.findById(barberInfoId)
                 .orElseThrow(() -> new SourceNotFoundException("Girilen id ile ilişkili bir kayıt bulunanmadı. Id: " + barberInfoId));
 
-        barberInfo.setUserId(updatedBarberInfo.getUserId());
+        barberInfo.setDuration(barberInfo.getDuration());
 
         BarberInfo updateBarberInfoInDatabase = barberInfoRepository.save(barberInfo);
 

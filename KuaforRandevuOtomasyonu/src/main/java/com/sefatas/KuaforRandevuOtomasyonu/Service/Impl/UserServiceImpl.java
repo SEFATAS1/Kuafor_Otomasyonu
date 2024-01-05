@@ -16,6 +16,7 @@ import java.util.stream.Collectors;
 @Service
 @AllArgsConstructor
 public class UserServiceImpl implements UserService {
+
     private UserRepository userRepository;
 
     @Override

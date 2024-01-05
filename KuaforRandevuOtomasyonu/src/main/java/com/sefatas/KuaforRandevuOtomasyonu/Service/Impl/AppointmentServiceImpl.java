@@ -15,20 +15,20 @@ public class AppointmentServiceImpl implements AppointmentService {
     private AppointmentRepository appointmentRepository;
 
     @Override
-    public List<AppointmentDto> findAllAppointment() {
+    public List<AppointmentDto> findAllAppointments() {
         List<Appointment> appointments = appointmentRepository.findAll();
         return appointments.stream().map((appointment -> AppointmentMapper.mapToAppointmentDto(appointment))).collect(Collectors.toList());
     }
 
     @Override
-    public AppointmentDto CreateAppointment(AppointmentDto appointmentDto) {
+    public AppointmentDto createAppointment(AppointmentDto appointmentDto) {
         Appointment appointment = AppointmentMapper.mapToAppointment(appointmentDto);
         Appointment createdAppointment = appointmentRepository.save(appointment);
         return AppointmentMapper.mapToAppointmentDto(createdAppointment);
     }
 
     @Override
-    public AppointmentDto UpdateAppointment(Long appointmentId, AppointmentDto updateAppointment) {
+    public AppointmentDto updateAppointment(Long appointmentId, AppointmentDto updateAppointment) {
         Appointment appointment = appointmentRepository.findById(appointmentId)
                 .orElseThrow(() -> new SourceNotFoundException("Girilen id ile ilişkili bir kayıt bulunanmadı. Id: " + appointmentId));
 
@@ -45,7 +45,7 @@ public class AppointmentServiceImpl implements AppointmentService {
     }
 
     @Override
-    public AppointmentDto UpdateAppointmentState(Long appointmentId, AppointmentDto updateAppointment) {
+    public AppointmentDto updateAppointmentState(Long appointmentId, AppointmentDto updateAppointment) {
         Appointment appointment = appointmentRepository.findById(appointmentId)
                 .orElseThrow(() -> new SourceNotFoundException("Girilen id ile ilişkili bir kayıt bulunanmadı. Id: " + appointmentId));
 

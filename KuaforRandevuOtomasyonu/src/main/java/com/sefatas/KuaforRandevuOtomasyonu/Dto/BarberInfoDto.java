@@ -7,7 +7,7 @@ import lombok.*;
 @Setter
 @NoArgsConstructor
 @AllArgsConstructor
-public class BarberInfoDto extends BarberInfo {
+public class BarberInfoDto {
     private Long Id;
     private Long UserId;
     private Integer Duration;

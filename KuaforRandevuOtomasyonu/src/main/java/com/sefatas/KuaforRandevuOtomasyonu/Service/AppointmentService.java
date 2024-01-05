@@ -6,8 +6,8 @@ import java.util.List;
 
 public interface AppointmentService {
 
-    List<AppointmentDto> findAllAppointment();
-    AppointmentDto CreateAppointment(AppointmentDto appointmentDto);
-    AppointmentDto UpdateAppointment(Long appointmentId, AppointmentDto updateAppointment);
-    AppointmentDto UpdateAppointmentState(Long appointmentId, AppointmentDto updateAppointment);
+    List<AppointmentDto> findAllAppointments();
+    AppointmentDto createAppointment(AppointmentDto appointmentDto);
+    AppointmentDto updateAppointment(Long appointmentId, AppointmentDto updateAppointment);
+    AppointmentDto updateAppointmentState(Long appointmentId, AppointmentDto updateAppointment);
 }

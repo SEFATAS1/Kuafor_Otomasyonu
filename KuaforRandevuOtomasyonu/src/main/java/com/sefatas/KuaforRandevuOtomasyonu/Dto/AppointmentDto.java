@@ -11,7 +11,7 @@ import java.util.Date;
 @Setter
 @NoArgsConstructor
 @AllArgsConstructor
-public class AppointmentDto {
+public class AppointmentDto{
     private Long Id;
     private Long BarberId;
     private Long CustomerId;
