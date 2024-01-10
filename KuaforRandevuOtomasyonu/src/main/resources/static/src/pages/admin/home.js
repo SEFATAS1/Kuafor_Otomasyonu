@@ -2,7 +2,7 @@ import React from 'react';
 
 const Home = () => {
     return(
-        <p>Home Sayfası </p>
+        <p>Admin İstatistiklerinin Olduğu Sayfası </p>
     );
   };
 
