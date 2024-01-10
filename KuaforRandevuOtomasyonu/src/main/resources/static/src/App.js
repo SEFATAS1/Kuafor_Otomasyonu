@@ -17,7 +17,7 @@ import Randevuİstekleri from './pages/kuafor/randevuistekleri';
 import Randevularim from './pages/kuafor/randevularim';
 
 function App() {
-  const userRole = 'admin';
+  const userRole = 'kuafor';
   return (
     <Router>
       <div className="App">
