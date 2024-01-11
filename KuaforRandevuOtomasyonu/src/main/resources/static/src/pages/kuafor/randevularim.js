@@ -13,7 +13,7 @@ const KuaforHome = () => {
 
               <div class="card mb-4 py-3 border-left-primary">
                 <div class="card-body">
-                  .border-left-primary
+                burada küçük bir tasarım yapılması gerekiyor her kutucuğun içinde randevunun detaylarının gelmesi için ayrıca tıklandığında bir modal ile ayrıntılar gelsin ve açılan modalda randevu olumlu yada olumsuz olarak kayıt edilip kapatabilinmelidir. 
                 </div>
               </div>
 
@@ -47,7 +47,7 @@ const KuaforHome = () => {
 
               <div class="card mb-4 py-3 border-bottom-primary">
                 <div class="card-body">
-                  .border-bottom-primary
+                  burada küçük bir tasarım yapılması gerekiyor her kutucuğun içinde randevunun detaylarının gelmesi için ayrıca tıklandığında bir modal ile ayrıntılar gelsin ve açılan modalda randevu olumlu yada olumsuz olarak kayıt edilip kapatabilinmelidir. 
                 </div>
               </div>
 

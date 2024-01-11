@@ -4,7 +4,7 @@ const KuaforHome = () => {
     return(
 <div class="container-fluid">
 
-<h1 class="h3 mb-2 text-gray-800">Dashboard</h1>
+<h1 class="h3 mb-2 text-gray-800">Kuafor Dashboard</h1>
 <p class="mb-4">Chart.js is a third party plugin that is used to generate the charts in this theme. The charts below have been customized - for further customization options, please visit the.</p>
 
 <div class="row">
