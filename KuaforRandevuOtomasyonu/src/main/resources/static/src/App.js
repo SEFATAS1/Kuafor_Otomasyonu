@@ -37,7 +37,7 @@ function App() {
   return (
     <Router>
       <div className="App">
-        <Header/>
+        <Header />
         <body id="page-top">
           <div id="wrapper">
             {userRole==='admin' ? <AdminSidebar/> : ''}
