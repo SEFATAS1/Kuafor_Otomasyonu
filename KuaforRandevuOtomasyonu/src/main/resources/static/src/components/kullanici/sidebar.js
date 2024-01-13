@@ -30,7 +30,7 @@ const Sidebar = () => {
         <hr class="sidebar-divider my-0"/>
 
         <li class="nav-item">   
-            <a class="nav-link" href="/randevularim">
+            <a class="nav-link" href="/randevularimm">
             <i class="fas fa-fw fa-tachometer-alt"></i>
             <span>Randevularım</span></a>
         </li>

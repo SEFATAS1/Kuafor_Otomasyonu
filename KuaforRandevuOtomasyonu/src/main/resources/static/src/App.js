@@ -25,7 +25,7 @@ import RandevularimKullanici from './pages/kullanici/randevularim';
 
 
 function App() {
-  const userRole = 'kuafor';
+  const userRole = 'kullanici';  
   const elementToRender =
   userRole === 'admin' ? (
     <AdminHome />
@@ -54,7 +54,7 @@ function App() {
                     <Route path="/ayarlarim" element={<Ayarlar />} />
                     <Route path="/randevuistekleri" element={<Randevuİstekleri />} />
                     <Route path="/kuaforler" element={<Kuaforler />} />
-                    <Route path="/randevularim" element={<RandevularimKullanici />} />
+                    <Route path="/randevularimm" element={<RandevularimKullanici />} />
                   </Routes>
                 </div>
               </div>
