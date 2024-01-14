@@ -12,7 +12,6 @@ const KuaforHome = () => {
           <div class="card mb-4 py-3 border-left-primary">
             <div class="card-body">
               <h5 class="card-title text-center">Randevu Detayları</h5>
-
               <div class="row text-center">
                 <div class="col-sm-6">
                   <p><strong>Randevu Sahibi:</strong> John Doe</p>
@@ -36,10 +35,6 @@ const KuaforHome = () => {
               </div>
             </div>
           </div>
-
-
-
-
           <div class="card mb-4 py-3 border-left-success">
             <div class="card-body">
               .border-left-success

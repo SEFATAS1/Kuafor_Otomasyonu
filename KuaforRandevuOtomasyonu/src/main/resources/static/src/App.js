@@ -25,9 +25,9 @@ import RandevularimKullanici from './pages/kullanici/randevularim';
 
 
 function App() {
-  const userRole = 'kullanici';  
+  const userRole = 'kuafor';  
   const elementToRender =
-  userRole === 'admin' ? (
+  userRole === 'kuafor' ? (
     <AdminHome />
   ) : userRole === 'kuafor' ? (
     <KuaforHome />
